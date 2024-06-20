@@ -1,0 +1,60 @@
+/*DEFAULT VALUES*/
+:root{
+    --green: rgb(3, 235, 3);
+    --blue: #008cff;
+    --yellow: #ffc400;
+}
+.green{
+    color: var(--green);
+    border: var(--green);
+}
+.red{
+    color: red;
+    border: red;
+}
+.yellow{
+    color: var(--yellow);
+    border: var(--yellow);
+}
+.blue{
+    color: var(--blue);
+    border: var(--blue);
+}
+.none{
+    display: none !important;
+}
+/*GENERAL*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #000;
+}
+/*BUTTOM*/
+.buttom{
+    display: block;
+    width: 150px;
+    font-size: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 5px solid;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.buttom:hover{
+    opacity: 0.68;
+}
+/*TIME*/
+div.time{
+    color: white;
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*LAP*/
+.lap{
+    color: white;
+}

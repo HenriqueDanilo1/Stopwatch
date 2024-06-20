@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="time">
+        <span id="h">00</span>
+        <span id="m">00</span>
+        <span id="s">00</span>
+        <span id="ms">00</span>
+    </div>
+    <buttom onclick="fstart()" id="start-buttom" class="buttom green">START</buttom>
+    <buttom onclick="fstop()" id="stop-buttom" class="buttom yellow none">STOP</buttom>
+    <buttom onclick="fresume()" id="resume-buttom" class="buttom green none">RESUME</buttom>
+    <buttom onclick="flap()" id="lap-buttom" class="buttom blue none">LAP</buttom>
+    <buttom onclick="freset()" id="reset-buttom" class="buttom red">RESET</buttom>
+    <p id="laps" class="lap"></p>
+    <script src="main.js"></script>
+</body>
+</html>
