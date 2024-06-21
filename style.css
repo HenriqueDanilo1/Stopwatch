@@ -1,7 +1,6 @@
 /*DEFAULT VALUES*/
 :root{
     --green: rgb(3, 235, 3);
-    --blue: #008cff;
     --yellow: #ffc400;
 }
 .green{
@@ -15,10 +14,6 @@
 .yellow{
     color: var(--yellow);
     border: var(--yellow);
-}
-.blue{
-    color: var(--blue);
-    border: var(--blue);
 }
 .none{
     display: none !important;
@@ -39,7 +34,8 @@ body{
 div.buttons{
     display: flex;
     justify-content: center;
-    gap: 35px
+    column-gap: 35px;
+    width: 100%;
 }
 .buttom{
     width: 150px;
@@ -62,7 +58,7 @@ div.buttons{
 /*TIME*/
 div.display{
     display: flex;
-    height: 50vh;
+    height: 60vh;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -74,11 +70,13 @@ div.time{
     display: flexbox;
     height: 90px;
 }
-/*LAP*/
-.title{
-    color: white;
-}
-.lap{
-    color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+@media screen and (max-width: 400px){
+    div.time{
+        font-size: 43px;
+    }
+    div.buttons{
+        flex-direction: column;
+        align-items: center;
+    }
 }
