@@ -7,18 +7,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="time">
-        <span id="h">00</span>
-        <span id="m">00</span>
-        <span id="s">00</span>
-        <span id="ms">00</span>
+    <div class="display">
+        <div class="time">
+            <span id="h" class="none">00</span>
+            <span id="htoo" class="none">:</span>
+            <span id="m">00</span>
+            <span>:</span>
+            <span id="s">00</span>
+            <span>.</span>
+            <span id="ms">00</span>
+        </div>
     </div>
-    <buttom onclick="fstart()" id="start-buttom" class="buttom green">START</buttom>
-    <buttom onclick="fstop()" id="stop-buttom" class="buttom yellow none">STOP</buttom>
-    <buttom onclick="fresume()" id="resume-buttom" class="buttom green none">RESUME</buttom>
-    <buttom onclick="flap()" id="lap-buttom" class="buttom blue none">LAP</buttom>
-    <buttom onclick="freset()" id="reset-buttom" class="buttom red">RESET</buttom>
-    <p id="laps" class="lap"></p>
+    <div class="buttons">
+        <buttom onclick="fstart()" id="start-buttom" class="buttom green">START</buttom>
+        <buttom onclick="fstop()" id="stop-buttom" class="buttom yellow none">STOP</buttom>
+        <buttom onclick="fresume()" id="resume-buttom" class="buttom green none">RESUME</buttom>
+        <buttom onclick="flap()" id="lap-buttom" class="buttom blue  disable">LAP</buttom>
+        <buttom onclick="freset()" id="reset-buttom" class="buttom red none">RESET</buttom>
+    </div>
+    <div class="laps">
+        <p class="title">LAP LAPTIME</p>
+        <p id="laps" class="lap">#0 00:00:00.60<br>#1 00:00:00.65<br>#2 00:00:00.68<br>#3 00:00:00.73<br>#4 00:00:00.80<br>#5 00:00:00.86<br>#6 00:00:00.95<br>#7 00:00:01.01<br>#8 00:00:01.06<br>#9 00:00:01.14<br>#10 00:00:01.20<br>#11 00:00:01.28<br>#12 00:00:01.34<br>#13 00:00:01.37<br>#14 00:00:01.42<br>#15 00:00:01.49<br>#16 00:00:01.57<br>#17 00:00:01.72<br>#18 00:00:01.78<br>#19 00:00:01.81<br>#20 00:00:01.86<br>#21 00:00:01.93<br>#22 00:00:02.01<br>#23 00:00:02.07<br>#24 00:00:02.09<br>#25 00:00:02.16<br>#26 00:00:02.22<br>#27 00:00:02.30<br>#28 00:00:02.36<br>#29 00:00:02.38<br>#30 00:00:02.45<br>#31 00:00:02.51<br>#32 00:00:02.59<br>#33 00:00:02.66<br>#34 00:00:02.68<br>#35 00:00:02.74<br>#36 00:00:02.81<br>#37 00:00:02.89<br>#38 00:00:02.96<br>#39 00:00:02.98<br>#40 00:00:03.04<br>#41 00:00:03.10<br>#42 00:00:03.17<br>#43 00:00:03.23<br>#44 00:00:03.32<br>#45 00:00:03.38<br>#46 00:00:03.46<br>#47 00:00:03.53<br>#48 00:00:03.60<br>#49 00:00:03.66<br>#50 00:00:03.69<br>#51 00:00:03.75<br>#52 00:00:03.82<br>#53 00:00:03.84<br>#54 00:00:03.91<br>#55 00:00:03.98<br>#56 00:00:04.06<br>#57 00:00:04.12<br>#58 00:00:04.15<br>#59 00:00:04.21<br>#60 00:00:04.31<br>#61 00:00:04.36<br>#62 00:00:04.43<br>#63 00:00:04.51<br></p>
+    </div>
     <script src="main.js"></script>
 </body>
 </html>

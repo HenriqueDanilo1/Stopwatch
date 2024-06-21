@@ -23,6 +23,10 @@
 .none{
     display: none !important;
 }
+.disable{
+    opacity: 0.5;
+    pointer-events: none;
+}
 /*GENERAL*/
 *{
     margin: 0;
@@ -31,9 +35,13 @@
 body{
     background-color: #000;
 }
-/*BUTTOM*/
+/*BUTTONS*/
+div.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 35px
+}
 .buttom{
-    display: block;
     width: 150px;
     font-size: 35px;
     text-align: center;
@@ -44,17 +52,33 @@ body{
     padding: 5px;
     border-radius: 8px;
     cursor: pointer;
+    display: flexbox;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .buttom:hover{
     opacity: 0.68;
 }
 /*TIME*/
+div.display{
+    display: flex;
+    height: 50vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
 div.time{
     color: white;
-    font-size: 60px;
+    font-size: 80px;
     font-family: Arial, Helvetica, sans-serif;
+    display: flexbox;
+    height: 90px;
 }
 /*LAP*/
+.title{
+    color: white;
+}
 .lap{
     color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
